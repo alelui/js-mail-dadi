@@ -8,11 +8,46 @@
 
 .container{
     width: 90%;
+    margin: 100px auto;
+    text-align: center;
+    background-color: slategrey;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#mailBox{
+    width: 50%;
     margin: auto;
-    background-color: aqua;
+    background-color: wheat;
+    font-size: 50px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.lucky-Box{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 80px;
+    color: white;
+}
+
+.lucky-Box > div{
+    width: 40%;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+#user,
+#machine{
+    background-color: green;
+}
+
+#luckyBox{
+    background-color: red;
+    
 }
 
 

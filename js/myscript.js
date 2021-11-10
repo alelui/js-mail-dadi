@@ -1,7 +1,7 @@
 // Mail Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
 const mail = prompt("Inserisci dal punto di vista stilistico dell'emai");
-const mail_List = ['astag@pippo.com', 'bastag@pippo.com', 'castag@pippo.com'];
+const mail_List = ['mickey@disney.com', 'donald@disney.com', 'goofy@disney.com', 'daisy@disney.com', 'unclescrooge@disney.com'];
 
 let sentinel = false;
 let i;
@@ -17,9 +17,9 @@ for ( i= 0; i < mail_List.length; i++){
 const box = document.getElementById('mailBox');
 
 if (sentinel){
-    box.innerHTML = "La tua mail é: " + mail_List[n];
+    box.innerHTML = "Your e-mail is: " + mail_List[n];
 }else{
-    box.innerHTML = 'La mail "' + mail + '" non esiste';
+    box.innerHTML = 'Sorry, we don\'t konw "' + mail + '"';
 }    
 
 
@@ -29,18 +29,21 @@ if (sentinel){
 userNum = Math.floor(Math.random() * 6) + 1;
 randomNum = Math.floor(Math.random() * 6) + 1;
 
-console.log('random: ' + randomNum);
-console.log('utente: ' + userNum);
 
 const luckyBox = document.getElementById('luckyBox');
+const user = document.getElementById('user');
+const machine = document.getElementById('machine');
+
+user.innerHTML = 'User ' + userNum;
+machine.innerHTML = 'Machine ' + randomNum;
 
 
 if ( userNum > randomNum ){
-    luckyBox.innerHTML = 'Il numero utente è piu alto'
+    luckyBox.innerHTML = 'User Wins'
 }else{
     if ( userNum < randomNum ){
-        luckyBox.innerHTML = 'Il numero macchina è piu alto'
+        luckyBox.innerHTML = 'Machine Wins'
     }else{
-        luckyBox.innerHTML = 'I numeri sono uguali'
+        luckyBox.innerHTML = 'Even Game'
     }
 }
