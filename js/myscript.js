@@ -18,7 +18,7 @@ for ( i= 0; i < mail_List.length; i++){
 const box = document.getElementById('mailBox');
 
 if (sentinel){
-    box.innerHTML = "Your are in the list! " + mail_List[n];
+    box.innerHTML = "You\'re in the list! " + mail_List[n];
 }else{
     box.innerHTML = 'Sorry, we don\'t konw you! "' + mail + '"';
 }    
@@ -39,15 +39,15 @@ const luckyBox = document.getElementById('luckyBox');
 const user = document.getElementById('user');
 const machine = document.getElementById('machine');
 
-user.innerHTML = 'User ' + userNum;
-machine.innerHTML = 'Machine ' + randomNum;
+user.innerHTML = 'Users ' + userNum;
+machine.innerHTML = 'Machines ' + randomNum;
 
 
 if ( userNum > randomNum ){
-    luckyBox.innerHTML = 'User Wins';
+    luckyBox.innerHTML = 'Users Win';
 }else{
     if ( userNum < randomNum ){
-        luckyBox.innerHTML = 'Machine Wins';
+        luckyBox.innerHTML = 'Machines Win';
     }else{
         luckyBox.innerHTML = 'Even Game';
     }
