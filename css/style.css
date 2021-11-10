@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: navy;
+}
+
 .container{
     width: 90%;
     margin: 100px auto;
@@ -17,7 +21,7 @@
 
 #mailBox{
     width: 50%;
-    margin: auto;
+    margin: 0 auto 60px;
     background-color: wheat;
     font-size: 50px;
     border-radius: 10px;
@@ -33,7 +37,7 @@
 }
 
 .lucky-Box > div{
-    width: 40%;
+    width: 45%;
     border: 1px solid black;
     margin: 20px;
     padding: 4px 10px;
